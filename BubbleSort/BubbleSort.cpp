@@ -35,8 +35,7 @@ void BubbleSort2(int a[], int size)
 				}
 			}
 		}
-	}
-	
+	}	
 }
 /*The function 3 record the place after where there is no change so the comparation after that position is omitted.
 */
