@@ -1,5 +1,8 @@
 #include "SelectionSort.h"
 using namespace std;
+/*Reference:
+http://www.cnblogs.com/kkun/archive/2011/11/23/2260281.html
+*/
 void SelectionSort(int a[], int n)
 {
 	int min,minPosition;
