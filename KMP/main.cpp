@@ -2,7 +2,7 @@
 using namespace std;
 int main()
 {
-	string str="abcab";
+	string str="cab";
 	string substr="ab";
 	cout<<KMP(str,substr)<<endl;
 	system("pause");
