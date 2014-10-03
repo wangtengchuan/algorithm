@@ -1,3 +1,8 @@
+/*KMP algorithm is aimed for string match, 
+which can determine whether the given string is the substring of another string.
+For more information, you can refer to 
+http://www.ruanyifeng.com/blog/2013/05/Knuth%E2%80%93Morris%E2%80%93Pratt_algorithm.html
+*/
 #include "kmp.h"
 using namespace std;
 int KMP(string str, string substr)
