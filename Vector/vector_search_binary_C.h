@@ -7,7 +7,8 @@ static Rank binSearch(T *A, T const &e, Rank lo, Rank hi)
 	while (lo < hi)
 	{
 		Rank mi = (lo + hi) >> 1;
-		(A[mi] <= e) ? lo=mi+1 : hi=mi;//等号放在那边是关键
+		//(A[mi] <= e) ? lo=mi+1 : hi=mi;//等号放在哪边是关键
+		(e < A[mi]) ? hi = mi : lo = mi+1;
 	}
 	return --lo;
 }
