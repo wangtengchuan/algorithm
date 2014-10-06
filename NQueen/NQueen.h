@@ -1,3 +1,4 @@
+/*用C++的方法解决8皇后问题*/
 #include <iostream>
 #include <algorithm>
 class NQueen
@@ -33,7 +34,7 @@ public:
 		return sum;
 	}
 
-	int palce(int n)
+	int place(int n)
 	{
 		for (int i = 0; i < n; i++)
 		{
@@ -48,7 +49,7 @@ public:
 		for (int i = 0; i < max; i++)
 		{
 			queen[n] = i;
-			if (!palce(n))
+			if (!place(n))
 			{
 				if (n == max - 1)
 					show();
