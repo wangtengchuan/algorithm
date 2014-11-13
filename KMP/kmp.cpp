@@ -16,7 +16,7 @@ int KMP(string str, string substr)
 	for(int i=0,j=0;i<str.length();)
 	{ 
 		while (str[i] != substr[0])i++;
-		if(str[i]==substr[j])
+		if (str[i] == substr[j] && i < str.length()&&j<substr.length())
 		{
 			i++;
 			j++;
