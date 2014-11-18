@@ -31,3 +31,7 @@ $tf*/
 .sdf
 **/Debug/
 **/Release/
+*.vcxproj
+*.vcxproj.filters
+*.idb
+./Debug/*

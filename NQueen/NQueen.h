@@ -1,4 +1,5 @@
 /*用C++的方法解决8皇后问题*/
+#pragma once
 #include <iostream>
 #include <algorithm>
 class NQueen

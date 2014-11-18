@@ -28,9 +28,9 @@ public:
 		copyFrom(A, li, hi);
 	}
 
-	Vector(Vector<T> const &V) copyFrom(V._elem, 0, V._size);
+	Vector(Vector<T> const& V) copyFrom(V._elem, 0, V._size);
 
-	Vector(Vector<T> const &V, Rank lo, Rank hi) copyFrom(V._elem, lo, hi);
+	Vector(Vector<T> const& V, Rank lo, Rank hi) copyFrom(V._elem, lo, hi);
 
 	~Vector(){ delete[] _elem; }
 
@@ -54,7 +54,11 @@ public:
 	{
 		return 
 	}
-	void insert(iterator i, template);
+	Rank insert(Rank r,T const& e);
+	Rank insert(T const& e)
+	{
+		return insert(_size, e);
+	}
 	
 };
 
